@@ -1,6 +1,10 @@
 #-------------------------------------- https://github.com/m4mallu/PMChatbot ------------------------------------------#
 class Presets(object):
-    WELCOME_TEXT = "Merhaba <b>{}</b>\n<code>Mesajınızı buraya yazın..\n En kısa sürede dönüş yapacağım. </code> 😉"
-    USER_DETAILS = "<b>Yeni Mesaj:</b>\nİsim: {} {}\nKullanıcı ID'si: {}\nKullanıcı Adı: @{}\nDolandırıcı: {}\nKısıtlı: {}\nDurum: {}\nDC ID'si: {}"
-    PM_TXT_ATT = "<b>Şundan İletildi:</b> {}\n<b>İsim:</b> {}\n\n{}"
-    PM_MED_ATT = "<b>Şundan İletildi:</b> {} \n<b>İsim:</b> {}"
+
+    WELCOME_TEXT = "❤️ <strong>Hello</strong> <b>{}</b>\n💬 <strong>Write your message and @TheLucii will reply when available.</strong>" 
+
+    USER_DETAILS = "💬 <b><strong><u>New Message</strong></u></b>\n🔻 <strong>Name:</strong> {} {}\n🔻 <steong>User ID</strong>: {}\n🔻 <strong>Username:</strong> @{}\n🔻 <strong>Scam:<strong> {}\n🔻 <strong>Limit:</strong> {}\n🔻 Status: {}\n🔷 <strong>DC no</strong>: {}" 
+
+    PM_TXT_ATT = "📍 <b><strong>Sent From:</strong></b> {}\n📍 <b><strong>Name:</strong></b> {}\n\n{}"
+
+    PM_MED_ATT = "📍 <b><strong>Sent From:</strong></b> {}\n📍 <b><strong>Name:</strong></b> {}"
