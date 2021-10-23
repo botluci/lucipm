@@ -3,6 +3,7 @@ import os
 
 from pyrogram import Client, filters
 from presets import Presets
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 if bool(os.environ.get("ENV", False)):
     from sample_config import Config
@@ -17,7 +18,15 @@ async def help_me(bot, message):
     info = await bot.get_users(user_ids=message.from_user.id)
     await bot.send_message(
         chat_id=message.chat.id,
-        text=Presets.WELCOME_TEXT.format(info.first_name)
+        text=Presets.WELCOME_TEXT.format(info.first_name), reply_markup=InlineKeyboardMarkup(
+
+[
+
+InlineKeyboardButton(f"👉🏻 Luciw", url=" https://t.me/luciw")
+
+]
+
+)
     )
     await bot.send_message(
         chat_id=Config.ADMIN,
